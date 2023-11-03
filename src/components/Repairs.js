@@ -1,9 +1,17 @@
+'use client'
 import React from 'react';
-import Image from 'next/image';
-import closebest from '../../../public/closebest.jpg';
-import edgework from '../../../public/edgework1.jpg';
+import Image from "next/legacy/image";
+import closebest from '../../public/closebest.jpg';
+import edgework from '../../public/edgework1.jpg';
+import { useRouter } from 'next/navigation';
 
 const Repairs = () => {
+  const router = useRouter();
+
+  function handleClickServices() {
+    router.push('/services');
+  }
+
   return (
     <section className="bg-slate-700 text-white py-16 shadow-xl rounded-xl m-8">
       <div className="container mx-auto text-center">
@@ -16,12 +24,16 @@ const Repairs = () => {
         </p>
         <div className="flex justify-center space-x-8">
           <div className="relative w-40 h-40 rounded-full overflow-hidden">
-            <Image src={closebest} layout="fill" objectFit="cover" alt="John Doe" />
+            <Image src={closebest} fill="true" objectFit="cover" alt="img repairs" />
           </div>
           <div className="relative w-40 h-40 rounded-full overflow-hidden">
-            <Image src={edgework}  layout="fill" objectFit="cover" alt="Team" />
+            <Image src={edgework}  fill="true" objectFit="cover" alt="img repairs" />
           </div>
         </div>
+        <button onClick={handleClickServices}
+        className="bg-slate-500 hover:bg-teal-600 text-white py-2 px-6 rounded-full font-semibold text-lg">
+          Get Started
+        </button>
       </div>
     </section>
   );

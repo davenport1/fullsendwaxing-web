@@ -1,52 +1,41 @@
-'use client'
-import React, { useState, useEffect } from 'react';
-import HomeSplash from '../components/HomeSplash/HomeSplash.js';
-import Mission from '@/components/Mission/Mission.js';
-import About from '@/components/About/About.js';
-import Tuning from '@/components/Services/Tuning.js';
-import Repairs from '@/components/Services/Repairs.js';
-import Products from '@/components/Products/Products.js';
-import Header from '@/components/Header/Header.js';
-import Reviews from '@/components/Reviews/Reviews.js';
+import React from 'react';
+import HomeSplash from '../components/HomeSplash.js';
+import Mission from '@/components/Mission.js';
+import About from '@/components/About.js';
+import Tuning from '@/components/Tuning.js';
+import Repairs from '@/components/Repairs.js';
+import Products from '@/components/Products.js';
+import Header from '@/components/Header.js';
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
-  const [componentHeight, setComponentHeight] = useState(null);
-
-  useEffect(() => {
-    const missionElement = document.getElementById('mission');
-    const aboutElement = document.getElementById('about');
-
-    if (missionElement && aboutElement) {
-      const aboutHeight = aboutElement.clientHeight;
-      setComponentHeight(aboutHeight);
-    }
-  }, []);
 
   return (
-        <main className="bg-slate-800">
-        <HomeSplash darkMode={darkMode} />
-        <div className="bg-slate-800 flex flex-wrap">
-          <div className="w-full lg:w-1/2" id="mission" style={{ height: componentHeight }}>
+    <div>
+      <Header className="z-0"/>
+      <main className="bg-zinc-800 z-50">
+      <HomeSplash className />
+      <div className='flex flex-wrap'>
+        <div className="w-full lg:w-1/2 p-4">
+          <div className="mb-4" id="mission">
             <Mission />
           </div>
-          <div className="w-full lg:w-1/2" id="about">
-            <About />
-          </div>
-        </div>
-        <div className="bg-slate-800 flex flex-wrap">
-          <div className="w-full lg:w-1/2" id="tuning">
+          <div className="mb-4" id="tuning">
             <Tuning />
           </div>
-          <div className="w-full lg:w-1/2" id="repairs">
+          <div className='mb-4' id="products">
+          <Products />
+          </div>
+        </div>
+        <div className="w-full lg:w-1/2 p-4">
+          <div className="mb-4" id="about">
+            <About />
+          </div>
+          <div className="mb-4" id="repairs">
             <Repairs />
           </div>
         </div>
-
-        <Products />
-
-        </main>
+      </div>
+      </main>
+    </div>
   )
 }
-
-// two columns for sizing

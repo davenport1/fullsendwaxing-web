@@ -10,9 +10,6 @@ const Mission = () => {
         blending expertise with a laid-back vibe. 
         Our custom waxing and repair services not only elevate your gear's performance but also pay homage to our mountain havens.
         </p>
-        <button className="bg-teal-500 hover:bg-teal-600 text-white py-2 px-6 rounded-full font-semibold text-lg">
-          Get Started
-        </button>
       </div>
     </section>
   );

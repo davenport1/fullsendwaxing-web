@@ -13,15 +13,19 @@ const Repairs = () => {
   }
 
   return (
-    <section className="bg-slate-700 text-white py-16 shadow-xl rounded-xl m-8">
+    <section className="bg-slate-700 text-white py-16 shadow-xl rounded-xl m-8 transition duration-300 transform hover:scale-105">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Ski and Board Repairs</h2>
+        <div>
         <p className="text-lg mb-12">
-          Meet our founder and snowboarding enthusiast, Alec Emery. 
-          With a passion for snow sports and years of experience, 
-          Alec decided to open Full Send Waxing to provide the best waxing services for fellow riders. 
-          His dedication to quality and attention to detail ensures that your board will always perform at its peak.
+        🔧 Ptex Repairs: Say goodbye to those unsightly base gouges and scratches. Our meticulous Ptex repairs seamlessly blend with your equipment, ensuring smooth, uninterrupted glides down the slopes.
         </p>
+        </div>
+        <div>
+        <p className="text-lg mb-12">
+        🔪 Edge Repairs: Cracked or damaged edges can spell trouble on the mountain. Let our experts restore your edges to their former glory, providing you with precision control and confidence on every turn.
+        </p>
+        </div>
         <div className="flex justify-center space-x-8">
           <div className="relative w-40 h-40 rounded-full overflow-hidden">
             <Image src={closebest} fill="true" objectFit="cover" alt="img repairs" />

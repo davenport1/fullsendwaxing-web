@@ -14,11 +14,11 @@ export default function Home() {
       <Header className="z-0"/>
       <main className="bg-zinc-800 z-50">
       <HomeSplash className />
+      <div className="mb-4" id="mission">
+            <Mission />
+      </div>
       <div className='flex flex-wrap'>
         <div className="w-full lg:w-1/2 p-4">
-          <div className="mb-4" id="mission">
-            <Mission />
-          </div>
           <div className="mb-4" id="tuning">
             <Tuning />
           </div>

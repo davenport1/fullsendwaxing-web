@@ -6,6 +6,14 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import FswLogoWhite from "../../public/logolight.png"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../app/globals.css'
+
+import { Container } from 'react-bootstrap';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTiktok, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faF } from '@fortawesome/free-solid-svg-icons';
 
 const HomeSplash = () => {
   return (
@@ -32,10 +40,17 @@ const HomeSplash = () => {
       <div className="text-center p-10 py-10">
         <p className="text-md py-5 leading-8 text-white max-w-xl mx-auto md:text-xl">
         </p>
-        <div className="text-5xl flex justify-center gap-16 py-3 text-white">
-          <AiFillInstagram />
-          <AiFillLinkedin />
-        </div>
+        < Container className="text-5xl flex justify-center gap-16 py-3 text-white">
+          <a href='https://instagram.com' target='_blank'>
+          <FontAwesomeIcon icon={faInstagram} className='h-10 w-10 text-white hover:scale-125'/>
+          </a>
+          <a href='https://facebook.com' target='_blank'>
+          <FontAwesomeIcon icon={faFacebook} className='h-10 w-10 text-white hover:scale-125'/>
+          </a>
+          <a href='https://tiktok.com' target='_blank'>
+          <FontAwesomeIcon icon={faTiktok} className='h-10 w-10 text-white hover:scale-125'/>
+          </a>
+        </Container>
       </div>
     </section>
   );

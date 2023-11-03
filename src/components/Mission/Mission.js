@@ -6,7 +6,9 @@ const Mission = () => {
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Our Mission</h2>
         <p className="text-lg mb-12 mx-12">
-          At Full Send Waxing, we're dedicated to providing top-quality waxing services to enhance your snowboarding experience. Our team of experts is committed to using the best products and techniques to ensure your board performs at its best. We believe in helping you achieve the ultimate ride down the slopes.
+        We're on a mission to redefine your snowboarding and skiing experience, 
+        blending expertise with a laid-back vibe. 
+        Our custom waxing and repair services not only elevate your gear's performance but also pay homage to our mountain havens.
         </p>
         <button className="bg-teal-500 hover:bg-teal-600 text-white py-2 px-6 rounded-full font-semibold text-lg">
           Get Started

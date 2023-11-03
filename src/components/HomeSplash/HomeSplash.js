@@ -3,7 +3,6 @@ import Image from 'next/image';
 import {
   AiFillInstagram,
   AiFillLinkedin,
-  AiFillYoutube,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import FswLogoWhite from "../../../public/logolight.png"
@@ -26,8 +25,9 @@ const HomeSplash = ({ darkMode }) => {
       </nav>
       <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
           <Image src={FswLogoWhite} 
-          layout="fill"
-          objectFit="cover"/>
+          fill
+          objectFit="cover"
+          alt ="Main splash image"/>
       </div>
       <div className="text-center p-10 py-10">
         <p className="text-md py-5 leading-8 text-white max-w-xl mx-auto md:text-xl">
@@ -35,7 +35,6 @@ const HomeSplash = ({ darkMode }) => {
         <div className="text-5xl flex justify-center gap-16 py-3 text-white">
           <AiFillInstagram />
           <AiFillLinkedin />
-          <AiFillYoutube />
         </div>
       </div>
     </section>

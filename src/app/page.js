@@ -1,15 +1,13 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-
-import Header from '../components/Header/Header.js';
 import HomeSplash from '../components/HomeSplash/HomeSplash.js';
 import Mission from '@/components/Mission/Mission.js';
 import About from '@/components/About/About.js';
 import Tuning from '@/components/Services/Tuning.js';
 import Repairs from '@/components/Services/Repairs.js';
 import Products from '@/components/Products/Products.js';
+import Header from '@/components/Header/Header.js';
 import Reviews from '@/components/Reviews/Reviews.js';
-
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -26,8 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <main className="bg-slate-800">
+        <main className="bg-slate-800">
         <HomeSplash darkMode={darkMode} />
         <div className="bg-slate-800 flex flex-wrap">
           <div className="w-full lg:w-1/2" id="mission" style={{ height: componentHeight }}>
@@ -39,7 +36,7 @@ export default function Home() {
         </div>
         <div className="bg-slate-800 flex flex-wrap">
           <div className="w-full lg:w-1/2" id="tuning">
-          <Tuning />
+            <Tuning />
           </div>
           <div className="w-full lg:w-1/2" id="repairs">
             <Repairs />
@@ -48,7 +45,8 @@ export default function Home() {
 
         <Products />
 
-      </main>
-    </div>
+        </main>
   )
 }
+
+// two columns for sizing

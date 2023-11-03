@@ -17,10 +17,10 @@ const About = () => {
       </div>
       <div className="flex flex-col m-8">
         <div className="relative w-60 h-60 rounded-3xl overflow-hidden shadow-xl m-4">
-          <Image src={closebest} layout="fill" objectFit="cover" alt="John Doe" />
+          <Image src={closebest} fill objectFit="cover" alt="Founder Alec Emery waxing a libtech orca" />
         </div>
         <div className="relative w-60 h-60 rounded-3xl overflow-hidden shadow-xl m-4">
-          <Image src={edgework}  layout="fill" objectFit="cover" alt="Team" />
+          <Image src={edgework}  fill objectFit="cover" alt="Founder Alec Emery tuning edges" />
         </div>
       </div>
     </section>

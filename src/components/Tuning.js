@@ -1,8 +1,8 @@
 'use client'
 import React from 'react';
 import Image from "next/legacy/image";
-import closebest from '../../public/closebest.jpg';
-import edgework from '../../public/edgework1.jpg';
+import productbest from '../../public/productbest.jpg';
+import farshot1 from '../../public/farshot1.jpg';
 import { useRouter } from 'next/navigation';
 
 const Tuning = () => {
@@ -21,11 +21,11 @@ const Tuning = () => {
         Join us in supporting snow sports excellence and preserving the beauty of our beloved mountains. Let's ride, and make the mountain experience yours, no matter where you call home!
         </p>
         <div className="flex justify-center space-x-8">
-          <div className="relative w-40 h-40 rounded-full overflow-hidden">
-            <Image src={closebest} fill="true" objectFit="cover" alt="tuning img" />
+          <div className="relative w-60 h-60 rounded-3xl overflow-hidden">
+            <Image src={productbest} fill="true" objectFit="cover" alt="tuning img" />
           </div>
-          <div className="relative w-40 h-40 rounded-full overflow-hidden">
-            <Image src={edgework}  fill="true" objectFit="cover" alt="tuning img" />
+          <div className="relative w-60 h-60 rounded-3xl overflow-hidden">
+            <Image src={farshot1}  fill="true" objectFit="cover" alt="tuning img" />
           </div>
         </div>
         <button onClick={handleClickServices}

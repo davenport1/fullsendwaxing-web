@@ -26,11 +26,11 @@ const Repairs = () => {
         🔪 Edge Repairs: Cracked or damaged edges can spell trouble on the mountain. Let our experts restore your edges to their former glory, providing you with precision control and confidence on every turn.
         </p>
         </div>
-        <div className="flex justify-center mx-60 my-10 space-x-8">
-          <div className="relative aspect-w-1 aspect-h-.9 rounded-3xl overflow-hidden shadow-2xl">
+        <div className="flex justify-center space-x-8">
+          <div className="relative rounded-3xl overflow-hidden w-60 h-60 ">
             <Image src={closework1} fill="true" objectFit="cover" alt="img repairs" />
           </div>
-          <div className="relative aspect-w-16 aspect-h-9 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative rounded-3xl overflow-hidden w-60 h-60 ">
             <Image src={closework2} fill="true" objectFit="cover" alt="img repairs" />
           </div>
         </div>

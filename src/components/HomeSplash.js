@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Image from "next/legacy/image";
 import {
@@ -13,22 +14,13 @@ import { Container } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTiktok, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faF } from '@fortawesome/free-solid-svg-icons';
+import { Icon } from '@iconify/react';
 
 const HomeSplash = () => {
   return (
     <section className="min-h-screen bg-[url('../../public/farshotbest.jpg')] bg-cover bg-bottom">
       <nav className="py-10 mb-12 flex justify-between text-white">
-        <h1 className="font-burtons text-xl px-10">Contact</h1>
-        <ul className="flex items-center">
-          <li className="px-10">
-            <BsFillMoonStarsFill
-              className="cursor-pointer text-2xl"
-            />
-          </li>
-          <li>
-          </li>
-        </ul>
+        <h1 className="font-burtons text-xl px-10"></h1>
       </nav>
       <div className="mx-auto rounded-full w-80 h-80 mt-20 md:h-96 md:w-96">
           <Image src={FswLogoWhite} 
@@ -49,6 +41,9 @@ const HomeSplash = () => {
           </a>
           <a href='https://vm.tiktok.com/ZTdCK6Uqn/' target='_blank'>
           <FontAwesomeIcon icon={faTiktok} className='h-10 w-10 text-white hover:scale-125'/>
+          </a>
+          <a href='https://venmo.com' target='_blank'>
+          <Icon icon="simple-icons:venmo" className='w-20 text-white hover:scale-125'/>
           </a>
         </Container>
       </div>

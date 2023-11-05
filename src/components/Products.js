@@ -11,12 +11,16 @@ const Products = () => {
                 <h2 className="text-3xl font-bold mb-8">Products In Use</h2>
                 <div className="flex flex-wrap m-8">
                     <div className="w-20 lg:w-1/5 flex flex-col items-center justify-center p-4">
-                        <a href="https://purlwax.com/" target="_blank" className="my-8">
+                        <div className="relative w-40 h-40 rounded-3xl overflow-hidden my-8">
+                        <a href="https://purlwax.com/" target="_blank">
                             <Image src={purllogo} className='rounded-3xl' alt='purl logo' style={{maxWidth: '100%', maxHeight: '100%'}} />
                         </a>
-                        <a href="https://www.swixsport.com/en/" target="_blank" className="my-8">
+                        </div>
+                        <div className="relative w-40 h-40 rounded-full overflow-hidden my-8">
+                        <a href="https://www.swixsport.com/en/" target="_blank">
                             <Image src={swixlogo} className="rounded-full" alt="swix logo" style={{maxWidth: '100%', maxHeight: '100%'}} />
                         </a>
+                        </div>
                     </div>
                     <div className="w-full lg:w-4/5 ">
                         <div>

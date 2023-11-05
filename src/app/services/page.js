@@ -1,16 +1,91 @@
+'use client'
 import Header from "@/components/Header";
+import Image from "next/image";
 import React from "react";
-import '../globals.css';
+import { useRouter } from 'next/navigation';
+import '../globals.css'
+import Footer from "@/components/Footer";
+import logocolordark from '../../../public/logocolordark.png';
 
 export default function Page() {
+    const router = useRouter();
+
+    function handleClickContact() {
+        router.push('/contact')
+    }
+
     return (
-        
         <div>
             <title>FSW Services</title>
-            <Header />
-            <main className="bg-zinc-800">
+            <Header className="z-10 relative" />
+            <main className="min-h-screen bg-[url('../../public/powderslash.jpg')] bg-cover bg-top">
+                <nav className="py-10 mb-12 flex justify-between text-white">
+                </nav>
+                <div className="flex justify-center items-center h-full mx-64">
+                    <section className="bg-slate-700 text-white m-8 py-16 shadow-2xl text-center text-lg items-center rounded-3xl">
+                        <div className="m-4 flex justify-center items-center space-x-10">
+                            <Image src={logocolordark} className="rounded-full h-32 w-32 shadow-xl" alt="fsw color logo" />
+                            <h1 className="text-3xl font-bold mb-8">Services</h1>
+                            <nav></nav>
+                        </div>
+                        <div className="m-16">
+                            <p className="text-large font-bold mb-8">
+                            At Full Send Waxing, we're all about supercharging your snowboarding and skiing mojo. Check out our offerings:
+                            </p>
+                        </div>
+                        <div className="rounded-3xl mx-64 p-16 text-left my-24 shadow-2xl shadow-black">
+                            <ol style={{ listStyle: 'disc', paddingLeft: '1em' }}>
+                                <li>
+                                    <p><span className="inline-block w-48">🛷 Standard Wax</span> 
+                                    <span className="inline-block w-4">:</span>$35 </p>
+                                </li>
+                                <li>
+                                    <p><span className="inline-block w-48">🔪 Edge Sharpening</span>
+                                    <span className="inline-block w-4">:</span> $10-20 </p>
+                                </li>
+                                <li>
+                                    <p><span className="inline-block w-48">🔧 Minor Repairs</span>
+                                    <span className="inline-block w-4">:</span> Priced During Consultation </p>
+                                </li>
+                                <li>
+                                    <p><span className="inline-block w-48">🛠️ Core Repairs</span>
+                                    <span className="inline-block w-4">:</span> $40/hour </p>
+                                </li>
+                            </ol>
+                        </div>
 
+                        <div className="m-24 max-w-5xl">
+                            <p className="text-large font-bold mb-8">
+                            We're all about delivering next-level expertise with a commitment to eco-friendliness. 
+                            Our convenient pick-up and delivery service brings top-notch gear and service right
+                             to your doorstep, wherever you are. Join us in supporting snow sports excellence
+                              and preserving the beauty of our beloved mountains. Let's ride, 
+                              and make the mountain experience yours, no matter where you call home!
+                            </p>
+                        </div>
+                        <div className="m-4 text-large font-bold mb-8">
+                            <button onClick={handleClickContact}
+                            className="bg-slate-500 hover:bg-teal-600 text-white py-2 px-6 rounded-full font-semibold text-lg shadow-2xl">
+                                Get In Touch!
+                            </button>
+                        </div>
+                    </section>
+                </div>
             </main>
+            <Footer />
         </div>
     )
 }
+
+
+// At Full Send Waxing, we're all about supercharging your snowboarding and skiing mojo. Check out our offerings:
+
+ 
+
+// Standard Wax: $35
+// Edge Sharpening: $10-20
+// Minor Repairs: Priced During Consultation
+// Core Repairs: $40/hour
+ 
+
+// We're all about delivering next-level expertise with a commitment to eco-friendliness. Our convenient pick-up and delivery service brings top-notch gear and service right to your doorstep, wherever you are. Join us in supporting snow sports excellence and preserving the beauty of our beloved mountains. Let's ride, and make the mountain experience yours, no matter where you call home!

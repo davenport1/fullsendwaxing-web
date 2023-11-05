@@ -24,10 +24,10 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-col m-8">
-        <div className="relative w-60 h-60 rounded-3xl overflow-hidden shadow-xl m-4">
+        <div className="relative w-60 h-60 rounded-3xl overflow-hidden m-4">
           <Image src={closebest} fill="true" objectFit="cover" alt="Founder Alec Emery waxing a libtech orca" />
         </div>
-        <div className="relative w-60 h-60 rounded-3xl overflow-hidden shadow-xl m-4">
+        <div className="relative w-60 h-60 rounded-3xl overflow-hidden m-4">
           <Image src={edgework}  fill="true" objectFit="cover" alt="Founder Alec Emery tuning edges" />
         </div>
       </div>

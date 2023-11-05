@@ -6,6 +6,7 @@ import Tuning from '@/components/Tuning.js';
 import Repairs from '@/components/Repairs.js';
 import Products from '@/components/Products.js';
 import Header from '@/components/Header.js';
+import Footer from '@/components/Footer.js';
 
 export default function Home() {
 
@@ -35,6 +36,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer className />
       </main>
     </div>
   )

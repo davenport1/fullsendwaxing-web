@@ -41,13 +41,13 @@ const HomeSplash = () => {
         <p className="text-md py-5 leading-8 text-white max-w-xl mx-auto md:text-xl">
         </p>
         < Container className="text-5xl flex justify-center gap-16 py-3 text-white">
-          <a href='https://instagram.com' target='_blank'>
+          <a href='https://instagram.com/fullsendwaxing?igshid=YmMyMTA2M2Y=' target='_blank'>
           <FontAwesomeIcon icon={faInstagram} className='h-10 w-10 text-white hover:scale-125'/>
           </a>
-          <a href='https://facebook.com' target='_blank'>
+          <a href='https://www.facebook.com/fullsendwaxing/' target='_blank'>
           <FontAwesomeIcon icon={faFacebook} className='h-10 w-10 text-white hover:scale-125'/>
           </a>
-          <a href='https://tiktok.com' target='_blank'>
+          <a href='https://vm.tiktok.com/ZTdCK6Uqn/' target='_blank'>
           <FontAwesomeIcon icon={faTiktok} className='h-10 w-10 text-white hover:scale-125'/>
           </a>
         </Container>

@@ -29,27 +29,35 @@ const Footer = () => {
         <div>
         <nav className="bottom-0 w-full bg-zinc-900 p-4 opacity-90 text-white flex justify-between items-center z-50">
             <div className="flex items-center space-x-4">
-            <a href="#">
-                <Image src={Logo} onClick={handleClickContact} className='h-12 w-12 rounded-full hover:scale-125' alt="fsw logo"/>
-            </a>
-            <a href="https://www.keeptahoeblue.org/" target="_blank">
-                <Image src={keeptahoeblue} className="h-12 w-12 rounded-xl hover:scale-125" alt="keep tahoe blue" />
-            </a>
-            <a href="https://protectourwinters.org/" target="_blank">
-                <Image src={POW} className="w-12 rounded-xl hover:scale-125" alt="protect our winters" />
-            </a>
-            <a href="https://www.mammothmountain.com/" target="_blank">
-                <Image src={mammothlogo} className='h-12 w-12 rounded-xl hover:scale-125' alt="mammoth logo" />
-            </a>
-            <a href="https://www.kirkwood.com/" target="_blank">
-                <Image src={kirkwoodlogo} className="h-12 w-12 rounded-xl hover:scale-125" alt="kirkwood logo" />
-            </a>
-            <a href="https://purlwax.com/" target="_blank">
-                <Image src={purllogo} className="h-12 w-12 rounded-xl hover:scale-125" alt="purl logo" />
-            </a>
-            <a href="https://www.swixsport.com/en/" target="_blank">
-                <Image src={swixlogo} className="h-12 w-12 rounded-xl hover:scale-125" alt="swix logo" />
-            </a>
+                <a href="#">
+                    <Image src={Logo} onClick={handleClickContact} className='h-12 w-12 rounded-full hover:scale-125' alt="fsw logo"/>
+                </a>
+                <a href="https://www.keeptahoeblue.org/" target="_blank">
+                    <Image src={keeptahoeblue} className="h-12 w-12 rounded-xl hover:scale-125" alt="keep tahoe blue" />
+                </a>
+                <a href="https://protectourwinters.org/" target="_blank">
+                    <Image src={POW} className="w-12 rounded-xl hover:scale-125" alt="protect our winters" />
+                </a>
+                <a href="https://www.mammothmountain.com/" target="_blank">
+                    <Image src={mammothlogo} className='h-12 w-12 rounded-xl hover:scale-125' alt="mammoth logo" />
+                </a>
+                <a href="https://www.kirkwood.com/" target="_blank">
+                    <Image src={kirkwoodlogo} className="h-12 w-12 rounded-xl hover:scale-125" alt="kirkwood logo" />
+                </a>
+                <a href="https://purlwax.com/" target="_blank">
+                    <Image src={purllogo} className="h-12 w-12 rounded-xl hover:scale-125" alt="purl logo" />
+                </a>
+                <a href="https://www.swixsport.com/en/" target="_blank">
+                    <Image src={swixlogo} className="h-12 w-12 rounded-xl hover:scale-125" alt="swix logo" />
+                </a>
+            </div>
+            <div className="flex justify-end">
+                <div className="flex flex-col items-end">
+                <p>Full Send Waxing</p>
+                <p>fullsendwaxing@gmail.com</p>
+                <p>phonnumber?</p>
+                <p>San Jose, CA</p>
+                </div>
             </div>
         </nav>
       </div>

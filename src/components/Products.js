@@ -13,12 +13,12 @@ const Products = () => {
                     <div className="w-20 lg:w-1/5 flex flex-col items-center justify-center p-4">
                         <div className="relative w-40 h-40 rounded-3xl overflow-hidden my-8">
                         <a href="https://purlwax.com/" target="_blank">
-                            <Image src={purllogo} className='rounded-3xl' alt='purl logo' style={{maxWidth: '100%', maxHeight: '100%'}} />
+                            <Image src={purllogo} className='rounded-3xl hover:scale-105' alt='purl logo' style={{maxWidth: '100%', maxHeight: '100%'}} />
                         </a>
                         </div>
                         <div className="relative w-40 h-40 rounded-full overflow-hidden my-8">
                         <a href="https://www.swixsport.com/en/" target="_blank">
-                            <Image src={swixlogo} className="rounded-full" alt="swix logo" style={{maxWidth: '100%', maxHeight: '100%'}} />
+                            <Image src={swixlogo} className="rounded-full hover:scale-105" alt="swix logo" style={{maxWidth: '100%', maxHeight: '100%'}} />
                         </a>
                         </div>
                     </div>

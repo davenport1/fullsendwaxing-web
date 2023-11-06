@@ -76,16 +76,3 @@ export default function Page() {
         </div>
     )
 }
-
-
-// At Full Send Waxing, we're all about supercharging your snowboarding and skiing mojo. Check out our offerings:
-
- 
-
-// Standard Wax: $35
-// Edge Sharpening: $10-20
-// Minor Repairs: Priced During Consultation
-// Core Repairs: $40/hour
- 
-
-// We're all about delivering next-level expertise with a commitment to eco-friendliness. Our convenient pick-up and delivery service brings top-notch gear and service right to your doorstep, wherever you are. Join us in supporting snow sports excellence and preserving the beauty of our beloved mountains. Let's ride, and make the mountain experience yours, no matter where you call home!

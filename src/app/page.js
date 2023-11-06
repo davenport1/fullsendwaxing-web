@@ -1,4 +1,3 @@
-import "next";
 import React from 'react';
 import HomeSplash from '../components/HomeSplash.js';
 import Mission from '@/components/Mission.js';
@@ -9,9 +8,11 @@ import Products from '@/components/Products.js';
 import Header from '@/components/Header.js';
 import Footer from '@/components/Footer.js';
 import Reviews from '@/components/Reviews.js';
+import fetch from 'node-fetch';
 
 export default function Home() {
-
+  global.Headers = fetch.Headers;
+  
   return (
     <div>
       <Header className="z-0"/>

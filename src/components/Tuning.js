@@ -13,7 +13,7 @@ const Tuning = () => {
   }
 
   return (
-    <section className="bg-slate-700 text-white py-16 shadow-xl rounded-xl m-8 transition duration-300 transform hover:scale-105">
+    <section className="bg-slate-700 text-white py-16 shadow-xl rounded-xl sm:m-2 md:m-8 transition duration-300 transform hover:scale-105">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 md:mb-8">Tuning Services</h2>
         <p className="text-lg mb-8 mx-4 md:mx-16"> {/* Added md:mx-16 */}

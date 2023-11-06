@@ -5,7 +5,7 @@ import edgework from '../../public/edgework1.jpg';
 
 const About = () => {
   return (
-    <section className="bg-slate-700 text-white py-8 md:py-16 shadow-xl rounded-xl m-4 md:m-8 flex flex-col md:flex-row items-center transition duration-300 transform hover:scale-105">
+    <section className="bg-slate-700 text-white py-8 md:py-16 shadow-xl rounded-xl sm:m-2 md:m-8 flex flex-col md:flex-row items-center transition duration-300 transform hover:scale-105">
       <div className="container mx-auto text-center flex-1 mb-8 md:mb-0 md:mr-8">
         <h2 className="text-3xl font-bold mb-4 md:mb-8">About Us</h2>
         <div className="mb-8 md:ml-8 md:mr-4"> {/* Adjusted margin for mobile */}

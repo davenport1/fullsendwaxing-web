@@ -5,17 +5,15 @@ import About from '@/components/About.js';
 import Tuning from '@/components/Tuning.js';
 import Repairs from '@/components/Repairs.js';
 import Products from '@/components/Products.js';
-import Header from '@/components/Header.js';
+import NavBar from '@/components/NavBar.js';
 import Footer from '@/components/Footer.js';
 import Reviews from '@/components/Reviews.js';
-import fetch from 'node-fetch';
 
 export default function Home() {
-  global.Headers = fetch.Headers;
-  
+
   return (
     <div>
-      <Header className="z-0"/>
+      <NavBar className="z-0"/>
       <main className="bg-zinc-800 z-50">
       <HomeSplash className />
       <div className="mb-4" id="mission">

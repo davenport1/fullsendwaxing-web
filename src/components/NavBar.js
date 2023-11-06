@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import Logo from "../../public/logodark.png";
 import Image from "next/image";
 
-const Header = () => {
+const NavBar = () => {
   const router = useRouter();
 
   const scrollToTop = () => {
@@ -59,4 +59,4 @@ const Header = () => {
   );
 }
 
-export default Header;
+export default NavBar;

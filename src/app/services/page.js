@@ -1,5 +1,5 @@
 'use client'
-import Header from "@/components/Header";
+import NavBar from "@/components/NavBar";
 import Image from "next/image";
 import React from "react";
 import { useRouter } from 'next/navigation';
@@ -17,7 +17,7 @@ export default function Page() {
     return (
         <div>
             <title>FSW Services</title>
-            <Header className="z-10 relative" />
+            <NavBar className="z-10 relative" />
             <main className="min-h-screen bg-[url('../../public/powderslash.jpg')] bg-cover bg-top">
                 <nav className="py-10 mb-12 flex justify-between text-white">
                 </nav>

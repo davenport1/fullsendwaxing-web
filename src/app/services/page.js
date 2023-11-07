@@ -36,19 +36,19 @@ export default function Page() {
                         <div className="m-6 sm:m-16 lg:m-64 rounded-3xl p-16 text-left my-24 shadow-2xl shadow-black">
                             <ol style={{ listStyle: 'disc', paddingLeft: '1em' }}>
                                 <li>
-                                    <p><span className="inline-block w-48">🛷 Standard Wax</span> 
+                                    <p><span className="inline-block w-44">🛷 Standard Wax</span> 
                                     <span className="inline-block w-4">:</span>$35 </p>
                                 </li>
                                 <li>
-                                    <p><span className="inline-block w-48">🔪 Edge Sharpening</span>
+                                    <p><span className="inline-block w-44">🔪 Edge Sharpening</span>
                                     <span className="inline-block w-4">:</span> $10-20 </p>
                                 </li>
                                 <li>
-                                    <p><span className="inline-block w-48">🔧 Minor Repairs</span>
-                                    <span className="inline-block w-4">:</span> Priced During Consultation </p>
+                                    <p><span className="inline-block w-44">🔧 Minor Repairs</span>
+                                    <span className="inline-block w-4">:</span>Consultation</p>
                                 </li>
                                 <li>
-                                    <p><span className="inline-block w-48">🛠️ Core Repairs</span>
+                                    <p><span className="inline-block w-44">🛠️ Core Repairs</span>
                                     <span className="inline-block w-4">:</span> $40/hour </p>
                                 </li>
                             </ol>

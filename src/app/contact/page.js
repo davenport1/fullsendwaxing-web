@@ -14,7 +14,7 @@ export default function ContactPage() {
             <main className="min-h-screen bg-[url('../../public/threeboarders.jpg')] bg-cover bg-top">
             <nav className="py-10 mb-12 flex justify-between text-white">
                 </nav>
-                <div className="flex justify-center items-center h-full mx-48">
+                <div className="flex justify-center items-center h-full">
                     <Contact />
                 </div>
             </main>

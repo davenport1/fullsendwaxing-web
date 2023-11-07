@@ -1,11 +1,12 @@
 'use client'
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import Logo from "../../public/logodark.png";
 import Image from "next/image";
 
 const NavBar = () => {
   const router = useRouter();
+  const pathname = usePathname();
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -33,7 +34,7 @@ const NavBar = () => {
     setMenuOpen(false); // Close menu after clicking a link
   }
   function handleClickHome() {
-    if (location.pathname === '/') {
+    if (pathname === '/') {
       scrollToTop();
     }
     else {

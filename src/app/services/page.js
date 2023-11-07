@@ -21,19 +21,19 @@ export default function Page() {
             <main className="min-h-screen bg-[url('../../public/powderslash.jpg')] bg-cover bg-top">
                 <nav className="py-10 mb-12 flex justify-between text-white">
                 </nav>
-                <div className="flex justify-center items-center h-full mx-64">
-                    <section className="bg-slate-700 text-white m-8 py-16 shadow-2xl text-center text-lg items-center rounded-3xl">
+                <div className="flex flex-col justify-center items-center lg:h-full">
+                    <section className="bg-slate-700 mb-8 w-4/5 sm:w-3/5 text-white shadow-2xl text-center text-lg items-center rounded-3xl">
                         <div className="m-4 flex justify-center items-center space-x-10">
                             <Image src={logocolordark} className="rounded-full h-32 w-32 shadow-xl" alt="fsw color logo" />
                             <h1 className="text-3xl font-bold mb-8">Services</h1>
                             <nav></nav>
                         </div>
-                        <div className="m-16">
+                        <div className=" m-16">
                             <p className="text-large font-bold mb-8">
                             At Full Send Waxing, we're all about supercharging your snowboarding and skiing mojo. Check out our offerings:
                             </p>
                         </div>
-                        <div className="rounded-3xl mx-64 p-16 text-left my-24 shadow-2xl shadow-black">
+                        <div className="m-6 sm:m-16 lg:m-64 rounded-3xl p-16 text-left my-24 shadow-2xl shadow-black">
                             <ol style={{ listStyle: 'disc', paddingLeft: '1em' }}>
                                 <li>
                                     <p><span className="inline-block w-48">🛷 Standard Wax</span> 

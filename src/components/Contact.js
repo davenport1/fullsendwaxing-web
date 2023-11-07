@@ -39,7 +39,7 @@ const Contact = () => {
     }
 
     return (
-        <section className="bg-slate-700 w-4/5 flex flex-col mx-auto text-white md:m-8 sm:py-2 m:py-16 shadow-2xl text-center text-lg items-center rounded-3xl">
+        <section className="bg-slate-700 w-4/5 h-4/5 flex flex-col mx-auto text-white md:m-8 sm:py-2 m:py-16 shadow-2xl text-center text-lg items-center rounded-3xl">
             <div className="m-4 sm:m-12 m:m-24 flex justify-center items-center space-x-10">
                 <Image src={logocolordark} className="rounded-full h-32 w-32 shadow-xl" alt="fsw color logo" />
                 <h1 className="text-xl font-bold mb-8">Get In Touch</h1>

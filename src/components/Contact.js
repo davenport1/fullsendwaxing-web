@@ -45,7 +45,7 @@ const Contact = () => {
                 <h1 className="text-xl font-bold mb-8">Get In Touch</h1>
                 <nav></nav>
             </div>
-            <form className="max-w-lg m-16 sm:m-16 lg:m-64" onSubmit={handleSubmit}>
+            <form className="max-w-lg m-16 sm:m-16 lg:m-32" onSubmit={handleSubmit}>
                 <div className="mb-6">
                     <input 
                         type="text" 

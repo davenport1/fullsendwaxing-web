@@ -28,7 +28,7 @@ export default function Page() {
                             <h1 className="text-3xl font-bold mb-8">Services</h1>
                             <nav></nav>
                         </div>
-                        <div className=" m-16">
+                        <div className="m-8 m:m-16">
                             <p className="text-large font-bold mb-8">
                             At Full Send Waxing, we're all about supercharging your snowboarding and skiing mojo. Check out our offerings:
                             </p>
@@ -54,7 +54,7 @@ export default function Page() {
                             </ol>
                         </div>
 
-                        <div className="m-24 max-w-5xl">
+                        <div className="m-8 m:m-24 max-w-5xl">
                             <p className="text-large font-bold mb-8">
                             We're all about delivering next-level expertise with a commitment to eco-friendliness. 
                             Our convenient pick-up and delivery service brings top-notch gear and service right

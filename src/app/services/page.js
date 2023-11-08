@@ -33,7 +33,7 @@ export default function Page() {
                             At Full Send Waxing, we're all about supercharging your snowboarding and skiing mojo. Check out our offerings:
                             </p>
                         </div>
-                        <div className="flex flex-col items-center m-4 sm:m-16 rounded-3xl p-4 m:p-16 lg:p-32 text-left my-24 shadow-2xl shadow-black">
+                        <div className="flex flex-col items-center m-1 sm:m-16 rounded-3xl p-1 md:p-16 lg:p-32 text-left my-24 shadow-2xl shadow-black">
                             <ol style={{ listStyle: 'disc', paddingLeft: '1em' }}>
                                 <li>
                                     <p><span className="inline-block w-40">🛷 Standard Wax</span> 

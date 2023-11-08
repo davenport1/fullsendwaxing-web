@@ -27,8 +27,8 @@ const Footer = () => {
 
     return (
         <div>
-        <nav className="bottom-0 w-full bg-zinc-900 p-4 opacity-90 text-white flex justify-between items-center z-50">
-            <div className="flex items-center space-x-4">
+        <nav className="bottom-0 w-full bg-zinc-900 p-4 opacity-90 text-white grid grid-cols-3 md:flex md:justify-between md:items-center z-50">
+            <div className="grid grid-cols-2  md:flex md:items-center md:space-x-4">
                 <a href="#">
                     <Image src={Logo} onClick={handleClickContact} className='h-12 w-12 rounded-full hover:scale-125' alt="fsw logo"/>
                 </a>
@@ -51,7 +51,9 @@ const Footer = () => {
                     <Image src={swixlogo} className="h-12 w-12 rounded-xl hover:scale-125" alt="swix logo" />
                 </a>
             </div>
-            <div className="flex justify-end">
+            <div>
+            </div>
+            <div className=" flex justify-end">
                 <div className="flex flex-col items-end">
                 <p>Full Send Waxing</p>
                 <p>fullsendwaxing@gmail.com</p>

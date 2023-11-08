@@ -56,9 +56,8 @@ const Footer = () => {
             <div className=" flex justify-end">
                 <div className="flex flex-col items-end">
                 <p>Full Send Waxing</p>
-                <p>fullsendwaxing@gmail.com</p>
-                <p>phonnumber?</p>
-                <p>San Jose, CA</p>
+                <p>alec@fullsendwaxing.com</p>
+                <p>Campbell, CA</p>
                 </div>
             </div>
         </nav>

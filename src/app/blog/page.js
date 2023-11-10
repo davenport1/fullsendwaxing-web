@@ -6,7 +6,7 @@ export default function Page() {
     return (
         <div>
             <title>The Gnar Blog</title>
-            <main className="min-h-screen bg-[url('../../public/backcountryascent1.jpg')] bg-cover bg-right">
+            <main className="min-h-screen bg-[url('../../public/dundy.HEIC')] bg-cover bg-right">
             <NavBar />
             <nav className="py-10 mb-12 flex justify-between text-white">
             </nav>

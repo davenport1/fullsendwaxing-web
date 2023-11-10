@@ -13,7 +13,7 @@ const Repairs = () => {
   }
 
   return (
-    <section className="bg-slate-700 text-white py-16 shadow-xl rounded-xl sm:m-2 md:m-8 transition duration-300 transform hover:scale-105">
+    <section className="bg-slate-700 text-white py-16 shadow-xl rounded-xl sm:m-2 md:m-8">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Ski and Board Repairs</h2>
         <div>

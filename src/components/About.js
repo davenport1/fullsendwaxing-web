@@ -5,7 +5,7 @@ import edgework from '../../public/edgework1.jpg';
 
 const About = () => {
   return (
-    <section className="bg-slate-700 text-white py-8 md:py-16 shadow-xl rounded-xl sm:m-2 md:m-8 flex flex-col md:flex-row items-center transition duration-300 transform hover:scale-105">
+    <section className="bg-slate-700 text-white px-4 py-8 md:py-16 shadow-xl rounded-xl sm:m-2 md:m-8 flex flex-col md:flex-row items-center">
       <div className="container mx-auto text-center flex-1 mb-8 md:mb-0 md:mr-8">
         <h2 className="text-3xl font-bold mb-4 md:mb-8">About Us</h2>
         <div className="mb-8 md:ml-8 md:mr-4"> {/* Adjusted margin for mobile */}
@@ -23,7 +23,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col mx-auto m-4 md:m-0"> {/* Centered and adjusted margin */}
+      <div className="flex flex-col mx-auto m-4"> {/* Centered and adjusted margin */}
         <div className="relative w-60 h-60 rounded-3xl overflow-hidden mb-4"> {/* Added margin bottom */}
           <Image src={closebest} fill="true" objectFit="cover" alt="Founder Alec Emery waxing a libtech orca" />
         </div>

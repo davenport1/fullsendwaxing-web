@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <NavBar className="z-0"/>
       <main className="bg-zinc-800 z-50">
-      <HomeSplash className />
+      <HomeSplash priority="true" />
       <div className="mb-4" id="mission">
             <Mission />
       </div>

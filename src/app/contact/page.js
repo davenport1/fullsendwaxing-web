@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from "react";
-import NavBar from '../../components/Contact.js'
+import NavBar from '../../components/NavBar.js'
 import Contact from "../../components/Contact.js";
 import Footer from "../../components/Footer.js";
 import '../globals.css';

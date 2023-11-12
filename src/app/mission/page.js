@@ -1,7 +1,7 @@
 'use client'
-import NavBar from "@/components/NavBar"
+import NavBar from "../../components/NavBar.js"
 import React from "react"
-import Mission from "@/components/Mission"
+import Mission from "../../components/Mission.js"
 
 export default function Page() {
     return(

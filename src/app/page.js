@@ -1,13 +1,13 @@
 import React from 'react';
 import HomeSplash from '../components/HomeSplash.js';
-import Mission from '@/components/Mission.js';
-import About from '@/components/About.js';
-import Tuning from '@/components/Tuning.js';
-import Repairs from '@/components/Repairs.js';
-import Products from '@/components/Products.js';
-import NavBar from '@/components/NavBar.js';
-import Footer from '@/components/Footer.js';
-import Reviews from '@/components/Reviews.js';
+import Mission from '../components/Mission.js';
+import About from '../components/About.js';
+import Tuning from '../components/Tuning.js';
+import Repairs from '../components/Repairs.js';
+import Products from '../components/Products.js';
+import NavBar from '../components/NavBar.js';
+import Footer from '../components/Footer.js';
+import Reviews from '../components/Reviews.js';
 
 export default function Home() {
 

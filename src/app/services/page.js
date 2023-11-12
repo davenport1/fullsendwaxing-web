@@ -1,10 +1,10 @@
 'use client'
-import NavBar from "@/components/NavBar";
+import NavBar from "../../components/NavBar.js";
 import Image from "next/image";
 import React from "react";
 import { useRouter } from 'next/navigation';
 import '../globals.css'
-import Footer from "@/components/Footer";
+import Footer from "../../components/Footer.js";
 import logocolordark from '../../../public/logocolordark.png';
 
 export default function Page() {

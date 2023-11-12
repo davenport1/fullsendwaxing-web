@@ -1,14 +1,16 @@
 'use client'
 import React, { useState } from "react"
-import useContactForm from "@/hooks/useContactForm"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import logocolordark from '../../public/logocolordark.png'
+import useContactForm from "../hooks/useContactForm"
 
 const Contact = () => {
     const router = useRouter();
 
     const {values, handleChange} = useContactForm();
+
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -16,18 +18,16 @@ const Contact = () => {
         let isValidForm = handleValidation();
 
         if(isValidForm) {
-            try {
-                const req = await sendEmail(values.email, values.subject, values.message);
-                if (req.status === 250) {
-                  setResponseMessage(
-                      {isSuccessful: true, message: 'Thank you for your message.'});
-                }
-            } catch (e) {
-                console.log(e);
-                setResponseMessage({
-                  isSuccessful: false,
-                  message: 'Oops something went wrong. Please try again.',
-                });
+            const response = await fetch('/api/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(values)
+            })
+
+            if(response.status == 200) {
+                resetForm();
             }
         }
         
@@ -57,6 +57,14 @@ const Contact = () => {
         setErrors({ ...tempErrors });
         console.log("errors", errors);
         return isValid;
+    }
+
+    const resetForm = () => {
+        values.fullname = '';
+        values.email = '';
+        values.subject = '';
+        values.message = '';
+        handleChange();
     }
 
     return (

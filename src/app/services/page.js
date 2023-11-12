@@ -18,7 +18,7 @@ export default function Page() {
         <div>
             <title>FSW Services</title>
             <NavBar className="z-10 relative" />
-            <main className="min-h-screen bg-[url('../../public/powderslash.jpg')] bg-cover bg-top">
+            <main className="min-h-screen bg-[url('../../public/natski.JPG')] bg-cover bg-top">
                 <nav className="py-10 mb-12 flex justify-between text-white">
                 </nav>
                 <div className="flex flex-col justify-center items-center lg:h-full">

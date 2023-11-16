@@ -21,54 +21,23 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // let isValidForm = handleValidation();
-
-        // if(isValidForm) {
-            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
-                .then((result) => {
-                    console.log(result.text);
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Message Sent Successfully',
-                    })
-                }, (error) => {
-                    console.log(error.text);
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Yard sale! Something went wrong',
-                        text: error.text,
-                    })
-                });
-            e.target.reset()
-        //}
-        
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text);
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Message Sent Successfully',
+                })
+            }, (error) => {
+                console.log(error.text);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Yard sale! Something went wrong',
+                    text: error.text,
+                })
+            });
+        e.target.reset();
     }
-
-    // const handleValidation = () => {
-    //     let tempErrors = {};
-    //     let isValid = true;
-
-    //     if (fullname.length <= 0) {
-    //         tempErrors["fullname"] = true;
-    //         isValid = false;
-    //     }
-    //     if (email.length <= 0) {
-    //         tempErrors["email"] = true;
-    //         isValid = false;
-    //     }
-    //     if(subject.length <= 0) {
-    //         tempErrors["subject"] = true;
-    //         isValid = false;
-    //     }
-    //     if(message.length <= 0) {
-    //         tempErrors["message"] = true;
-    //         isValid = false;
-    //     }
-
-    //     setErrors({ ...tempErrors });
-    //     console.log("errors", errors);
-    //     return isValid;
-    // }
 
     const resetForm = () => {
         values.fullname = '';
@@ -81,7 +50,7 @@ const Contact = () => {
     return (
         <section className="bg-slate-700 w-4/5 h-4/5 flex flex-col text-white md:m-8 sm:py-2 m:py-16 shadow-2xl text-center text-lg items-center rounded-3xl">
             <div className=" m-4 sm:m-12 md:m-24 flex justify-center items-center space-x-10">
-                <Image src={logocolordark} className="rounded-full h-32 w-32 shadow-xl" alt="fsw color logo" />
+                <Image src={logocolordark} className="rounded-full h-32 w-32 shadow-xl" alt="fsw color logo" priority="true"/>
                 <h1 className="text-xl font-bold mb-8">Get In Touch</h1>
                 <nav></nav>
             </div>
@@ -90,6 +59,7 @@ const Contact = () => {
                     <input 
                         type="text" 
                         id="fullname" 
+                        name="fullname"
                         value={values.fullname} 
                         onChange= {handleChange}
                         placeholder="Your Name" 
@@ -101,6 +71,7 @@ const Contact = () => {
                     <input 
                         type="email" 
                         id="email"
+                        name="email"
                         value={values.email} 
                         onChange={handleChange}
                         placeholder="Your Email" 
@@ -112,6 +83,7 @@ const Contact = () => {
                     <input
                         type="text"
                         id="subject"
+                        name="subject"
                         value={values.subject}
                         onChange={handleChange}
                         placeholder="Subject"
@@ -123,6 +95,7 @@ const Contact = () => {
                 <div className="mb-6">
                     <textarea 
                         id="message"
+                        name="message"
                         type="text"
                         value={values.message} 
                         onChange={handleChange}

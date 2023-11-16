@@ -1,11 +1,6 @@
 'use client'
 import React from 'react';
 import Image from "next/legacy/image";
-import {
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import FswLogoWhite from "../../public/logolight.png"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../app/globals.css'
@@ -27,7 +22,8 @@ const HomeSplash = () => {
           fill="true"
           objectFit="cover"
           alt ="Main splash image"
-          className='rounded-full'/>
+          className='rounded-full'
+          priority="true"/>
       </div>
       <div className="text-center p-10 py-10">
         <p className="text-md py-5 leading-8 text-white max-w-xl mx-auto md:text-xl">

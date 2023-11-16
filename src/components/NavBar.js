@@ -48,7 +48,7 @@ const NavBar = () => {
       <nav className="fixed top-0 w-full bg-zinc-900 p-4 opacity-80 text-white flex justify-between items-center z-50">
         <div className="flex items-center">
           <a href="#" onClick={handleClickHome}>
-            <Image src={Logo} className='h-12 w-12 rounded-full' alt="fsw logo"/>
+            <Image src={Logo} className='h-12 w-12 rounded-full' alt="fsw logo" priority="true"/>
           </a>
           <div className="md:hidden ml-3">
             <button 

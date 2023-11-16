@@ -38,7 +38,7 @@ const HomeSplash = () => {
           <a href='https://vm.tiktok.com/ZTdCK6Uqn/' target='_blank'>
           <FontAwesomeIcon icon={faTiktok} className='h-10 w-10 text-white hover:scale-125'/>
           </a>
-          <a href='https://venmo.com' target='_blank'>
+          <a href='https://venmo.com/code?user_id=1964786585698304640&created=1700151778.773841&printed=1' target='_blank'>
           <Icon icon="simple-icons:venmo" className='w-20 text-white hover:scale-125'/>
           </a>
         </Container>

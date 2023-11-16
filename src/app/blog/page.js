@@ -2,7 +2,6 @@ import Footer from "../../components/Footer.js";
 import NavBar from "../../components/NavBar";
 import React from "react";
 
-
 export default function Page() {
     return (
         <div>

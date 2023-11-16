@@ -1,18 +1,16 @@
 'use client'
-import React, { useState } from "react"
+import React from "react"
 import Image from "next/image"
-import { useRouter } from "next/navigation"
 import logocolordark from '../../public/logocolordark.png'
 import useContactForm from "../hooks/useContactForm"
 import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2';
 
-const SERVICE_ID = "fullsendwaxing_test";
-const TEMPLATE_ID = "template_ri8dczs";
+const SERVICE_ID = "fullsendwaxing_prod";
+const TEMPLATE_ID = "template_4ao9ltc";
 const PUBLIC_KEY = "UApUvn0RCM9HVsoZn";
 
 const Contact = () => {
-    const router = useRouter();
 
     const {values, handleChange} = useContactForm();
 

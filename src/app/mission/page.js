@@ -1,4 +1,3 @@
-'use client'
 import NavBar from "../../components/NavBar.js"
 import React from "react"
 import Mission from "../../components/Mission.js"

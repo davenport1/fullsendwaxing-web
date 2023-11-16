@@ -1,5 +1,5 @@
-'use client'
-import React, { useState } from "react";
+
+import React from "react";
 import NavBar from '../../components/NavBar.js'
 import Contact from "../../components/Contact.js";
 import Footer from "../../components/Footer.js";

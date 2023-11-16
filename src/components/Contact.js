@@ -4,6 +4,12 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import logocolordark from '../../public/logocolordark.png'
 import useContactForm from "../hooks/useContactForm"
+import emailjs from 'emailjs-com'
+import Swal from 'sweetalert2';
+
+const SERVICE_ID = "fullsendwaxing_test";
+const TEMPLATE_ID = "template_ri8dczs";
+const PUBLIC_KEY = "UApUvn0RCM9HVsoZn";
 
 const Contact = () => {
     const router = useRouter();
@@ -15,49 +21,54 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        let isValidForm = handleValidation();
+        // let isValidForm = handleValidation();
 
-        if(isValidForm) {
-            const response = await fetch('/api/send', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(values)
-            })
-
-            if(response.status == 200) {
-                resetForm();
-            }
-        }
+        // if(isValidForm) {
+            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+                .then((result) => {
+                    console.log(result.text);
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Message Sent Successfully',
+                    })
+                }, (error) => {
+                    console.log(error.text);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Yard sale! Something went wrong',
+                        text: error.text,
+                    })
+                });
+            e.target.reset()
+        //}
         
     }
 
-    const handleValidation = () => {
-        let tempErrors = {};
-        let isValid = true;
+    // const handleValidation = () => {
+    //     let tempErrors = {};
+    //     let isValid = true;
 
-        if (fullname.length <= 0) {
-            tempErrors["fullname"] = true;
-            isValid = false;
-        }
-        if (email.length <= 0) {
-            tempErrors["email"] = true;
-            isValid = false;
-        }
-        if(subject.length <= 0) {
-            tempErrors["subject"] = true;
-            isValid = false;
-        }
-        if(message.length <= 0) {
-            tempErrors["message"] = true;
-            isValid = false;
-        }
+    //     if (fullname.length <= 0) {
+    //         tempErrors["fullname"] = true;
+    //         isValid = false;
+    //     }
+    //     if (email.length <= 0) {
+    //         tempErrors["email"] = true;
+    //         isValid = false;
+    //     }
+    //     if(subject.length <= 0) {
+    //         tempErrors["subject"] = true;
+    //         isValid = false;
+    //     }
+    //     if(message.length <= 0) {
+    //         tempErrors["message"] = true;
+    //         isValid = false;
+    //     }
 
-        setErrors({ ...tempErrors });
-        console.log("errors", errors);
-        return isValid;
-    }
+    //     setErrors({ ...tempErrors });
+    //     console.log("errors", errors);
+    //     return isValid;
+    // }
 
     const resetForm = () => {
         values.fullname = '';
@@ -89,7 +100,7 @@ const Contact = () => {
                 <div className="mb-6">
                     <input 
                         type="email" 
-                        id="email" 
+                        id="email"
                         value={values.email} 
                         onChange={handleChange}
                         placeholder="Your Email" 
@@ -111,7 +122,7 @@ const Contact = () => {
                 </div>
                 <div className="mb-6">
                     <textarea 
-                        id="message" 
+                        id="message"
                         type="text"
                         value={values.message} 
                         onChange={handleChange}

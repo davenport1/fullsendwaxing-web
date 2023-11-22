@@ -8,7 +8,7 @@ import Swal from 'sweetalert2';
 
 const SERVICE_ID = "fullsendwaxing_prod";
 const TEMPLATE_ID = "template_4ao9ltc";
-const PUBLIC_KEY = "UApUvn0RCM9HVsoZn";
+const PUBLIC_KEY = "8UHnyyRY-jyYCyEqJ";
 
 const Contact = () => {
 

@@ -1,3 +1,4 @@
+"use client"
 import NavBar from "../../components/NavBar.js";
 import Login from "../../components/Login.js";
 import React from "react";

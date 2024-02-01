@@ -42,6 +42,10 @@ const NavBar = () => {
       setMenuOpen(false); // Close menu after clicking a link
     }
   }
+  function handleClickLogin() {
+    router.push('/login');
+    setMenuOpen(false);
+  }
 
   return (
     <div>
@@ -71,6 +75,9 @@ const NavBar = () => {
             </a>
             <a href="#" onClick={handleClickServices} className="block mx-3 md:mx-5 my-2 md:my-0 text-lg text-white">
               Services
+            </a>
+            <a href="#" onClick={handleClickLogin} className="block mx-3 md:mx-5 my-2 md:my-0 text-lg text-white">
+              Login
             </a>
           </div>
         </div>

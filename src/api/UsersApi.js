@@ -1,5 +1,4 @@
 import httpClient from "@/api/Client";
-import * as http from "http";
 
 const createUserEndpoint = '/createuser';
 const loginEndpoint = '/login';
@@ -9,8 +8,9 @@ const changePasswordEndpoint = '/notimplemented';
 export const createUser = async (email, password) => {
     try {
         const response = await httpClient.post(createUserEndpoint, { email, password });
-        const token = response.data;
+        const { email: userEmail, token } = response.data;
         localStorage.setItem('token', token);
+        localStorage.setItem('currentUser', email);
         return token;
     } catch (error) {
         throw new Error('Failed to create user\n' + error);
